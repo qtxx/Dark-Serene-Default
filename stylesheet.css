@@ -805,18 +805,19 @@ Details: AskReddit based theme, dark version */
     .sidecontentbox .content button { padding: 0 10px; margin-top: 10px; }
 
 /* Mod buttons */
-    .pretty-button.negative, .pretty-button.neutral, .pretty-button.positive, .entry .buttons li.reported-stamp {
+    .pretty-button.negative, .pretty-button.neutral, .pretty-button.positive, .pretty-button.inoffensive, .entry .buttons li.reported-stamp {
         margin: 0 2px; 
         color: #fff;
         line-height: 1.4em;
         padding: 0 5px;
         border: 1px solid rgba(0,0,0,.1)!important;
-        border-radius: 0; }
+        border-radius: 0;
+        text-indent: 0; }
 
     .pretty-button.positive { background: #69b391; }
     .pretty-button.negative { background: #DE576C; }
     .pretty-button.neutral { background: #b0bec5; }
-
+    .pretty-button.inoffensive { background: #71c5bc; }
     .pretty-button.positive:hover { background: #5cac87; }
     .pretty-button.negative:hover { background: #db475e; }
     .pretty-button.neutral:hover { background: #a5b5bd; }
@@ -1089,7 +1090,7 @@ Details: AskReddit based theme, dark version */
 
     .gold-accent.comment-visits-box select { background: #121414; border: 1px solid #2e3234; color: #FFF7FB; }
 
-.award-square .award-name { color: #FFF7FB; }
+    .award-square .award-name { color: #FFF7FB; }
 
 /* Search Results */
     .searchpane { background-color: #1b1e1f; margin: 0 300px 0 10px; background-image: url(%%search-large%%); color: #aaa; }
@@ -1272,6 +1273,7 @@ Details: AskReddit based theme, dark version */
     .front-page .linklisting .link .entry,
     .listing-page .link .entry { margin-left: 105px; }
     .front-page .expando { margin-left: 5px; }
+    .multi-page .link .entry { margin-left: 65px; }
 
     .front-page .content .spacer, .listing-page .content .spacer { margin-bottom: 0; }
 
@@ -2012,7 +2014,6 @@ Details: AskReddit based theme, dark version */
         padding: 3px 10px!important; }
     #authorInfoToolTip .blueButton:hover { color: #FFF7FB!important; }
 
-/* Misc markup */
     .comment .md ul { list-style: none; padding: 0; margin: 0; color: #eee; }
     .comment .md ul li { padding-left: 1em; text-indent: -.7em; }
     .comment .md ul li:before { content: "• "; color: #7BA7AF; }
@@ -2036,3 +2037,13 @@ Details: AskReddit based theme, dark version */
     .comment .md tr:nth-child(odd) td { background-color: #2f3234; }
     .comment .md tr:hover td { background: rgba(0,0,0,.1); }
     .comment .md td { border: 1px solid #2e3234; }
+
+/* Toolbox fixes */
+    .mod-toolbox .menuarea.modtools {
+        margin: 0px 300px 0 10px!important;
+        border-top: 0!important;
+        border-right: 0!important;
+        padding: 5px 10px!important;
+        z-index: 1!important; }
+
+    .mod-toolbox .menuarea.modtools .pretty-button { margin: 0; }
