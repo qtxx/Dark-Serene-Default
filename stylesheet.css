@@ -835,9 +835,10 @@ Details: AskReddit based theme, dark version */
 
 /* Comments Page Extras */
     .comments-page .infobar {
-        border: 1px solid rgba(0,0,0,.1);
-        border-left: 0;
-        border-right: 0;
+        border: 0;
+  background: #121414;
+        border-top: 1px solid #2e3234;
+margin-bottom: 0;
         margin-right: 300px; }
 
     .infobar p a {
@@ -2097,3 +2098,15 @@ Details: AskReddit based theme, dark version */
         z-index: 1!important; }
 
     .mod-toolbox .menuarea.modtools .pretty-button { margin: 0; }
+
+/* beta program */
+	.beta-hint a {
+		border-right: 1px solid rgba(225,255,255,.25);
+		margin-left: -36px;
+		width: 35px;
+		height: 40px;
+		font-size: 0;
+		background: url(%%flask%%) center no-repeat transparent; }
+
+	.beta-hint a:hover { background-color: #3c444e!important; }
+	.res .beta-hint a { margin-left: -51px; border: 0; }
