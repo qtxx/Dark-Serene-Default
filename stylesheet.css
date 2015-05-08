@@ -1537,6 +1537,7 @@ margin-bottom: 0;
     .subscription-box .title { font-size: small; line-height: 20px; }
     .subscription-box .box-separator { border: 0; }
     .trophy-description { color: #aaa; }
+	.profile-page p.parent a.userTagLink { text-indent: 0; }
 
 /* Modtools */
     .icon-menu li { padding: 2px 2px 2px 10px; }
@@ -2110,3 +2111,13 @@ margin-bottom: 0;
 
 	.beta-hint a:hover { background-color: #3c444e!important; }
 	.res .beta-hint a { margin-left: -51px; border: 0; }
+
+/* extras */
+	.comment.collapsed .midcol { visibility: visible !important; }
+	.comment.collapsed .arrow.up, .comment.collapsed .arrow.down { display: none  !important; }
+	.userTagLink.hasTag, #userTaggerPreview {
+		padding: 0 8px!important;
+		border: 1px solid #2e3234!important;
+		color: #ebebeb!important;
+		line-height: 13px!important;
+		border-radius: 0!important; }
